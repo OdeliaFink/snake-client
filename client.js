@@ -14,6 +14,7 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Successfully connected to fame server');
     conn.write('Name: OCF');
+    conn.write('Move: up')
   });
 
   return conn;
